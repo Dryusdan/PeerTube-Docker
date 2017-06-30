@@ -1,0 +1,38 @@
+listen:
+  port: 9000
+
+# Correspond to your reverse proxy "listen" configuration
+webserver:
+  https: <https>
+  hostname: '<hostname>'
+  port: <port>
+
+# Your database name will be "peertube"+database.suffix
+database:
+  hostname: '<database_host>'
+  port: <database_port>
+  suffix: '_prod'
+  username: '<database_username>'
+  password: '<database_password>'
+
+# From the project root directory
+storage:
+  certs: 'certs/'
+  videos: 'videos/'
+  logs: 'logs/'
+  previews: 'previews/'
+  thumbnails: 'thumbnails/'
+  torrents: 'torrents/'
+
+admin:
+  email: '<admin_email>'
+
+signup:
+  enabled: <signup_enabled>
+
+# If enabled, the video will be transcoded to mp4 (x264) with "faststart" flag
+# Uses a lot of CPU!
+transcoding:
+  enabled: <transcoding_enable>
+  threads: <transcoding_threads>
+
